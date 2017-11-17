@@ -1,0 +1,35 @@
+/*#region **base** */
+
+@charset "utf-8";
+@import "themeSettings";
+@import "minreset.min.css";
+@import "basic2";
+html, body {
+  height: 100% !important;
+}
+html {
+  font: 400 16px/1.5 "Microsoft YaHei", Arial, "Lucida Grande", Verdana, hei !important;
+}
+ul, ol {
+  list-style: none !important;
+}
+body {
+  min-width: 320px !important;
+  background: @pageColor !important; /*#D4D5D2 !important; */
+  overflow-x: hidden !important;
+  -webkit-text-size-adjust: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-user-select: none !important;
+  color: #353434 !important;
+}
+
+#app {
+
+  display: flex !important;
+  flex-direction: column !important;
+  //justify-content: space-between !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+

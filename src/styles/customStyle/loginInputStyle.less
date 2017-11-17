@@ -1,0 +1,42 @@
+/*登录及类似界面输入框样式*/
+@import "../common/themeSettings";
+
+.loginInputStyle {
+    .mu-text-field {
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 0;
+    }
+    .focus-state {
+        color: @themeColor;
+    }
+    .mu-text-field-focus-line {
+        background-color: @themeColor;
+    }
+    .mu-text-field-content {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0;
+        height: 59px;
+        //placeholder文字样式
+        .hintText {
+            color: @placeholderColor;
+            font-size: @ftSize3;
+            bottom: 16px;
+            line-height: 1em;
+        }
+        .mu-text-field-input {
+            height: auto;
+        }
+        //输入框文字样式
+        .muText {
+            margin-bottom: 12px;
+        }
+        //输入有误时底线变红
+        .errorLine {
+            background-color: #ff7c8e;
+        }   
+    }
+}

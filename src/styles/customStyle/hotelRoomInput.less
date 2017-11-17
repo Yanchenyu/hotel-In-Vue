@@ -1,0 +1,157 @@
+/*房间信息入住样式*/
+@import "../common/themeSettings";
+.hotelRoomLogin {
+    .mu-text-field {
+        min-height: auto;
+        height: 44px;
+        line-height: 44px;
+        margin: 0;
+        .mu-text-field-content {
+            padding-bottom: 0;
+            padding-top: 0;
+            height: auto !important;
+            .hintTextClass {
+                font-size: @ftSize2;
+                color: @placeholderColor;
+            }
+            .inputClass {
+                font-size: @ftSize2;
+                color: #333;
+            }
+            .mu-text-field-hint {
+                height: 44px;
+                line-height: 44px;
+                top: 0;
+            }
+            .mu-text-field-input {
+                height: 28px;
+                line-height: 28px;
+                margin-top: 8px;
+            }
+            .mu-text-field-textarea {
+                margin-top: 11px;
+            }
+            .mu-text-field-help {
+                color: @themeColor;
+                top: 40px;
+            }
+        }
+    }
+    .mu-checkbox-icon {
+        height: 13px;
+        margin-right: 3px
+    }
+    .mu-checkbox input[type=checkbox]:checked+.mu-checkbox-wrapper .mu-checkbox-ripple-wrapper,.mu-checkbox-icon-checked {
+        color: @themeColor
+    }
+    .mu-checkbox-ripple-wrapper {
+        width: 24px;
+        height: 24px;
+        top: 0px;
+        left: 5px;
+    }
+    .mu-checkbox-icon-uncheck {
+        color: @placeholderColor
+    }
+    .mu-checkbox-label {
+        color: @placeholderColor
+    }
+    .mu-checkbox-svg-icon {
+        height: 14px;
+        width: 36px;
+    }
+    // article公用样式
+    article {
+        padding-left: 10px;
+        border-bottom: @borderBottom;
+        background-color: @panelColor;
+        &>div {
+            height: 44px;
+            align-items: center;
+            &:not(:last-child) {
+                border-bottom: @borderBottom;
+            }
+            .menuTitle {
+                    display: inline-block;
+                    color: #666;
+                    font-size: @ftSize2;
+                    width: 80px;
+                    line-height: 44px;
+                    height: 44px;
+                    border-bottom: 0 !important;
+            }
+        }
+    }
+}
+// OTA的bottomSheet样式
+.OTAsheet {
+    .mu-list {
+        padding: 0;
+        .mu-item {
+            height: 44px;
+            min-height: 0;
+        }
+        &>div{
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            font-size: @ftSize2;
+            &:not(:last-child) {
+                border-bottom: 0.7px solid @splitColor;
+            }
+            &:last-child {
+                height: 54px;
+                border-top: 10px solid @splitColor;
+            }
+        }
+        .choose {
+            .mu-item-title {
+                color: @themeColor;
+            }
+        }
+    }
+}
+// 好想住的bottomSheet样式
+.HXZsheet {
+    .mu-list {
+        padding: 0;
+        .mu-item {
+            height: 44px;
+            min-height: 0;
+            position: relative;
+            .mu-item-left {
+                position: absolute;
+                top: 0;
+                left: 10px;
+                i {
+                    font-family: inherit !important;
+                    font-size: @ftSize2;
+                    color: #333;
+                }
+            }
+        }
+        .mu-item.show-left {
+            padding: 0
+        }
+        &>div{
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            font-size: @ftSize2;
+            &:not(:last-child) {
+                border-bottom: 0.7px solid @splitColor;
+            }
+            &:last-child {
+                height: 54px;
+                border-top: 10px solid @splitColor;
+            }
+        }
+        .choose {
+            .mu-item-title {
+                color: @themeColor;
+            }
+        }
+    }
+}
+
+

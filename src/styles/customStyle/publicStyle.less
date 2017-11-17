@@ -1,0 +1,101 @@
+@import "../common/themeSettings";
+
+.museOverride {
+    .mu-raised-button-primary {
+        background-color: @themeColor;
+    }
+    .mu-raised-button {
+        background-color: @themeColor;
+        color: @panelColor;
+        box-shadow: none;
+    }
+    // 按钮切换的公共样式
+    .mu-switch-thumb {
+        width: 25px;
+        height: 25px;
+    }
+    .mu-switch-track {
+        height: 29px;
+    }
+    .mu-switch-thumb {
+        background-color: @panelColor;
+        top: 6px;
+        left: 4px;
+    }
+    .mu-switch input[type=checkbox]:checked+.mu-switch-wrapper .mu-switch-thumb {
+        background-color: @panelColor;
+        color: @panelColor;
+    }
+    .mu-switch input[type=checkbox]:checked+.mu-switch-wrapper .mu-switch-track {
+        background-color: @themeColor;
+    }
+    .mu-switch-track, .mu-switch.disabled .mu-switch-track {
+        background-color: @panelColor;
+        border: 1px solid @splitColor;
+    }
+    .mu-switch.disabled input[type=checkbox]:checked+.mu-switch-wrapper .mu-switch-track {
+        background-color: #92dfd8;
+    }
+    .mu-switch.disabled input[type=checkbox]:checked+.mu-switch-wrapper .mu-switch-thumb {
+        background-color: @panelColor;
+    }
+    .mu-switch-track, .mu-switch.disabled .mu-switch-track {
+        border: 1px solid @splitColor;
+    }
+    .mu-switch-container {
+        width: 50px;
+    }
+    .mu-switch-ripple-wrapper {
+        left: -15px;
+    }
+    // 选择日期样式
+    .mu-date-picker {
+        width: 105px;
+        .mu-text-field-hint.show {
+            font-size: @ftSize2;
+            color: @placeholderColor;
+        }
+    }
+    .mu-dialog-wrapper {
+        .mu-date-display {
+            background-color: @themeColor;
+        }
+        .mu-day-button.now .mu-day-button-text {
+            color: @themeColor;
+        }
+        .mu-day-button.hover .mu-day-button-text, .mu-day-button.selected .mu-day-button-text {
+            color: @panelColor !important;
+        }
+        .mu-day-button-bg {
+            background-color: @themeColor;
+        }
+        .mu-flat-button-label {
+            color: @themeColor;
+        }
+    }
+}
+// 选择日期样式
+.mu-date-picker {
+    width: 105px;
+    .mu-text-field-hint.show {
+        font-size: @ftSize2;
+        color: @placeholderColor;
+    }
+}
+.mu-dialog-wrapper {
+    .mu-date-display {
+        background-color: @themeColor;
+    }
+    .mu-day-button.now .mu-day-button-text {
+        color: @themeColor;
+    }
+    .mu-day-button.hover .mu-day-button-text, .mu-day-button.selected .mu-day-button-text {
+        color: @panelColor !important;
+    }
+    .mu-day-button-bg {
+        background-color: @themeColor;
+    }
+    .mu-flat-button-label {
+        color: @themeColor;
+    }
+}

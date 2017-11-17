@@ -1,0 +1,15 @@
+export const SET_HOTEL_MASTER_USER_DATA = 'SET_HOTEL_MASTER_USER_DATA'  // 设置客栈主人用户信息
+export const SET_HOTEL_ROOM_DATA = 'SET_HOTEL_ROOM_DATA'  // 设置选中的房间信息
+export const SET_ROUTER_TITLE = 'SET_ROUTER_TITLE'  // 设置标题
+export const SET_ROOM_STATUS = 'SET_ROOM_STATUS'  // 设置房间入住状态
+export const SET_HOTEL_ROOM_ORDER_LIST = 'SET_HOTEL_ROOM_ORDER_LIST'  // 设置房间全部订单列表
+export const SET_HOTEL_ROOM_ALREADY_ORDER = 'SET_HOTEL_ROOM_ALREADY_ORDER'  // 设置房间已预订的订单
+export const SET_HOTEL_ROOM_DATE = 'SET_HOTEL_ROOM_DATE'  // 设置日期
+export const SET_LOGIN_WAY_INDEX = 'SET_LOGIN_WAY_INDEX'  // 设置登录方式index
+export const SET_ORDER_STATUS = 'SET_ORDER_STATUS'  // 设置订单支付状态
+export const SET_ORDER_REMARK = 'SET_ORDER_REMARK'  // 设置订单备注页面
+export const RELOAD_HOTEL_ROOM_LOGIN_DATA = 'RELOAD_HOTEL_ROOM_LOGIN_DATA'  // 是否重新请求登记入住页面
+export const SET_HOTEL_ROOM_MES = 'SET_HOTEL_ROOM_MES'  // 设置酒店房间基本信息
+export const GO_MAINTAIN = 'GO_MAINTAIN'  // 是否去维修页面
+export const MAINTEN_BACK = 'MAINTEN_BACK'  // 是否返回到列表页面
+export const SET_DIALOG = 'SET_DIALOG'  // 设置弹出框内容
