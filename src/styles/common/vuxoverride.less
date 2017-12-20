@@ -1,0 +1,198 @@
+/* 覆盖vux组件默认样式 */
+.vux-no-group-title.weui-cell:before {
+  border-top: 0; // 此行未成功覆盖
+}
+
+.address .vux-override .vux-cell-box:before {
+  border: 0 !important;
+}
+
+// vux 覆盖对应组件 popup-picker, xinput/xnumber/cell
+.vux-override .weui-cell, .vux-override.weui-cell {
+  padding: 0px;
+  height: 44px;
+  &:before {
+    border-top: 0;
+  }
+  /* XNumber控件固有 */
+  &.xnumber {
+    .vux-number-selector-sub, .vux-number-selector-plus {
+      padding: 2px 1px 0 1px;
+    }
+
+    .vux-number-input {
+      padding: 0;
+      font-size: @ftSize-normal;
+      height: 22px;
+    }
+  }
+  /* Cell的Label */
+  .vux-label {
+    //width: 80px;
+    display: inline-block;
+  }
+}
+
+.vux-override-radio .weui-cell, .vux-override-radio.weui-cell {
+  padding: 0px;
+  height: 44px;
+  &:before {
+    left: 0;
+  }
+}
+
+// popup-picker 覆盖条件
+.vux-override.vux-cell-box {
+
+  &:before {
+    border-top: 0;
+  }
+  .weui-label {
+    width: 80px; /* 此值可以根据具体场景再调整 Book2Page.vue使用此值*/
+  }
+}
+
+// vux group组件无标题时的样式覆盖
+.weui-cells.vux-no-group-title:before {
+  border-top: 0;
+}
+
+.weui-cells.vux-no-group-title:after {
+  border-bottom: 0;
+}
+
+//
+
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label .vux-override {
+  color: @themeColor;
+}
+
+.weui-tabbar__label .vux-override {
+  text-align: center;
+  color: #999999;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+//
+.vux-header.vux-override .vux-header-back {
+  color: white;
+}
+
+.vux-header {
+  padding: 32px 0 12px 0 !important;
+}
+
+//覆盖标题栏返回图标的颜色
+.vux-header.vux-override .vux-header-left .left-arrow:before {
+  border: 1px solid white;
+  border-width: 1px 0 0 1px;
+}
+
+.vux-header .vux-header-left, .vux-header .vux-header-right {
+  top: 32px !important; //Yan app顶部下移修改
+}
+
+// echo 2017-07-28 标题下移10px  暂注释，后期放开，Yan app顶部下移修改
+.vux-header.vux-override .vux-header-title, .vux-header h1{
+  height: 20px;
+  line-height: 1em;
+}
+
+//修改地址选择的“完成”颜色为系统主题色
+.vux-popup-picker-header .vux-flexbox-item.vux-popup-picker-header-menu.vux-popup-picker-header-menu-right{
+  color: #25c0b1;
+}
+
+.vux-override .vux-cell-box:before {
+  left: 0;
+}
+
+.vux-override a.weui-dialog__btn.weui-dialog__btn_default {
+  color: #25c0b1;
+  font-size:16px;
+}
+
+.vux-override a.weui-dialog__btn.weui-dialog__btn_primary {
+  color: #25c0b1;
+  font-size:16px;
+}
+
+
+// 20170829 vue override 新机制，需要考虑active时，背景色整体变化
+.vux-override-v1 {
+  .weui-cell {
+    padding: 10px;
+  }
+  label.vux-label{
+    display: inline-block;
+    width: 80px;
+  }
+}
+
+
+.register .weui-input{
+  margin-top:5px;
+}
+
+.dialog .weui-input {
+  margin-top: 15px;
+}
+
+.getDoorKey .weui-input,.getDoorKey .weui-cell__bd.weui-cell__primary {
+  text-align: center;
+  height: 100%;
+}
+
+//samrtHotel首页banner样式修改
+.smartBanner .vux-slider > .vux-indicator, .vux-slider .vux-indicator-right {
+  position: absolute;
+  bottom: 80px;
+}
+
+.hotelBanner .vux-slider > .vux-indicator, .vux-slider .vux-indicator-right {
+  bottom: 0;
+}
+
+.smartBanner .vux-slider > .vux-indicator > a > .vux-icon-dot, .vux-slider .vux-indicator-right > a > .vux-icon-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .6);
+}
+
+.smartBanner .vux-slider > .vux-indicator > a > .vux-icon-dot.active, .vux-slider .vux-indicator-right > a > .vux-icon-dot.active {
+  background: rgba(255, 255, 255, .9);
+}
+
+.smartBanner .vux-slider > .vux-indicator > a, .vux-slider .vux-indicator-right > a {
+  margin-left: 10px;
+}
+
+.noYourRoom .weui-dialog__btn_default {
+  color: #25c0b1 !important;
+}
+
+.callMorning .callYouWakeUp {
+  text-align:center;
+  font-size:16px
+}
+
+// 设备控制部分样式覆盖
+.range-quantity {
+  background-color: #25c0b1 !important;
+}
+
+// 所有的组件自带的右方向箭样式统一
+.link-right::after, .link-up::after, .link-down::after,.weui-cell_access .weui-cell__ft:after,.weui-cell_access .weui-cell__ft:after,.weui-cell_access .weui-cell__ft:after {
+  border-color: @ftColorBlack3 !important;
+  border-width: 0.8px 0.8px 0 0 !important;
+}
+
+.vux-number-selector svg {
+  fill: #25c0b1 !important;
+}
+
+.vux-number-selector.vux-number-disabled svg {
+  fill: #ccc !important;
+}

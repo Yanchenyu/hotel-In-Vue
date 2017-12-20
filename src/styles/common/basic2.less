@@ -6,32 +6,42 @@
  * @desc [自定义样式]
 */
 
+/* 字体大小
+@ftSize-min: 10px;
+@ftSize-small: 12px;
+@ftSize-normal: 14px;
+@ftSize-hl: 16px;
+@ftSize-h2: 20px;
+*/
 
 /* 字体大小 */
-.cus-size1 {
-  font-size: @ftSize1;
+.cus-min {
+  font-size: @ftSize-min;
 }
 
-.cus-size2 {
-  font-size: @ftSize2;
+.cus-small {
+  font-size: @ftSize-small;
 }
 
-.cus-size3 {
-  font-size: @ftSize3;
+.cus-normal {
+  font-size: @ftSize-normal;
 }
 
-.cus-size4 {
-  font-size: @ftSize4;
+.cus-h1 {
+  font-size: @ftSize-hl;
 }
 
-.cus-size5 {
-  font-size: @ftSize5;
+.cus-huge {
+  font-size: @ftSize-huge;
 }
 
-.cus-size6 {
-  font-size: @ftSize6;
+.cus-h2 {
+  font-size: @ftSize-h2;
 }
 
+.cus-giant {
+  font-size: 22px;
+}
 
 /* 自定义颜色 */
 .cus-themeColor {
@@ -169,7 +179,11 @@
   border-bottom: 1px solid @pageColor;
 }
 
-/* xicon svg 颜色填充*/
+/* vux xicon svg 颜色填充*/
+.cell-x-icon {
+  fill: @ftColorBlack3;
+}
+
 .svgicon {
   color: @themeColor;
 }
